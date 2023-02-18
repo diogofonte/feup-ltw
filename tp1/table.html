@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Table</title>
+    <style>
+        table {
+           border-collapse: collapse;
+        }
+        th, td {
+           border:1px solid;
+           padding: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr><th rowspan="2">Student</th><th rowspan="1">Exam</th><th rowspan="1">2nd Exam</th></tr>
+          </thead>
+          <tfoot>
+            <tr><td>100</td><td>200</td><td>300</td></tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>a</td><td>b</td><td>c</td>
+            </tr>
+            <tr>
+              <td>d</td><td>e</td><td>f</td>
+            </tr>
+          </tbody>
+    </table>
+</body>
+</html>
