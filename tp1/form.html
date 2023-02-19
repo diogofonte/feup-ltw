@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required="required">
+
+        <label for="age">Age:</label>
+        <input type="radio" name="age" value="m18">&lt;18
+        <input type="radio" name="age" value="19-35">19-35
+        <input type="radio" name="age" value="36-48">36-48
+        <input type="radio" name="age" value=">49">&gt;49
+
+        <label for="profession">Profession:</label>
+        <input name="profession" list="professions">
+        <datalist id="professions">
+            <option value="software enginner">Software Engineer</option>
+            <option value="cybersecurity specialist">Cybersecurity Specialist</option>
+            <option value="professor">Professor</option>
+            <option value="administrative">Administrative</option>
+            <option value="data engineer">Data Engineer</option>
+        </datalist>
+
+        <label for="country">Country</label>
+        <select name="country" required="required">
+            <option></option>
+            <option value="portugal">Portugal</option>
+            <option value="spain">Spain</option>
+            <option value="usa">United States of America</option>
+            <option value="uk">United Kingdown</option>
+        </select>
+
+        <label for="interests">Interests</label>
+        <select name="interests">
+            <optgroup label="sports">
+                <option value="swimming">Swimming</option>
+                <option value="body building">Body Building</option>
+                <option value="socker">Football (socker)</option>
+                <option value="basketball">Basketball</option>
+            </optgroup>
+            <optgroup label="tech">
+                <option value="artifical intelligence">Artificial Intelligence</option>
+                <option value="machine learning">Machine Learning</option>
+                <option value="data analysis">Data Analysis</option>
+                <option value="software enginnering"> Software Engineering</option>
+            </optgroup>
+        </select>
+
+        <label for="comments">How did you find out about the site?</label>
+        <textarea name="comments" rows="5" cols="60"></textarea>
+
+        <button formmethod="post" type="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
