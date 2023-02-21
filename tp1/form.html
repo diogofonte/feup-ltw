@@ -8,16 +8,16 @@
 </head>
 <body>
     <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required="required">
+        <label>Name:</label>
+        <input type="text" name="name" required="required">
 
-        <label for="age">Age:</label>
+        <label>Age:</label>
         <input type="radio" name="age" value="m18">&lt;18
         <input type="radio" name="age" value="19-35">19-35
         <input type="radio" name="age" value="36-48">36-48
         <input type="radio" name="age" value=">49">&gt;49
 
-        <label for="profession">Profession:</label>
+        <label>Profession:</label>
         <input name="profession" list="professions">
         <datalist id="professions">
             <option value="software enginner">Software Engineer</option>
@@ -27,17 +27,18 @@
             <option value="data engineer">Data Engineer</option>
         </datalist>
 
-        <label for="country">Country</label>
+        <label>Country</label>
         <select name="country" required="required">
-            <option></option>
+            <option selected>-</option>
             <option value="portugal">Portugal</option>
             <option value="spain">Spain</option>
             <option value="usa">United States of America</option>
             <option value="uk">United Kingdown</option>
         </select>
 
-        <label for="interests">Interests</label>
+        <label>Interests</label>
         <select name="interests">
+            <option selected>-</option>
             <optgroup label="sports">
                 <option value="swimming">Swimming</option>
                 <option value="body building">Body Building</option>
@@ -52,7 +53,7 @@
             </optgroup>
         </select>
 
-        <label for="comments">How did you find out about the site?</label>
+        <label>How did you find out about the site?</label>
         <textarea name="comments" rows="5" cols="60"></textarea>
 
         <button formmethod="post" type="submit">
