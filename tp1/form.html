@@ -8,54 +8,60 @@
 </head>
 <body>
     <form>
-        <label>Name:</label>
-        <input type="text" name="name" required="required">
-
-        <label>Age:</label>
-        <input type="radio" name="age" value="m18">&lt;18
-        <input type="radio" name="age" value="19-35">19-35
-        <input type="radio" name="age" value="36-48">36-48
-        <input type="radio" name="age" value=">49">&gt;49
-
-        <label>Profession:</label>
-        <input name="profession" list="professions">
-        <datalist id="professions">
-            <option value="software enginner">Software Engineer</option>
-            <option value="cybersecurity specialist">Cybersecurity Specialist</option>
-            <option value="professor">Professor</option>
-            <option value="administrative">Administrative</option>
-            <option value="data engineer">Data Engineer</option>
-        </datalist>
-
-        <label>Country</label>
-        <select name="country" required="required">
-            <option selected>-</option>
-            <option value="portugal">Portugal</option>
-            <option value="spain">Spain</option>
-            <option value="usa">United States of America</option>
-            <option value="uk">United Kingdown</option>
-        </select>
-
-        <label>Interests</label>
-        <select name="interests">
-            <option selected>-</option>
-            <optgroup label="sports">
-                <option value="swimming">Swimming</option>
-                <option value="body building">Body Building</option>
-                <option value="socker">Football (socker)</option>
-                <option value="basketball">Basketball</option>
-            </optgroup>
-            <optgroup label="tech">
-                <option value="artifical intelligence">Artificial Intelligence</option>
-                <option value="machine learning">Machine Learning</option>
-                <option value="data analysis">Data Analysis</option>
-                <option value="software enginnering"> Software Engineering</option>
-            </optgroup>
-        </select>
-
-        <label>How did you find out about the site?</label>
-        <textarea name="comments" rows="5" cols="60"></textarea>
-
+        <label>
+            Name:
+            <input type="text" name="name" required>
+        </label>
+        <fieldset>
+            <legend>Age:</legend>
+            <label><input type="radio" name="age" value="m18">&lt;18</label>
+            <label><input type="radio" name="age" value="19-35">19-35</label>
+            <label><input type="radio" name="age" value="36-48">36-48</label>
+            <label><input type="radio" name="age" value=">49">&gt;49</label>
+        </fieldset>
+        <label>
+            Profession:
+            <input name="profession" list="professions">
+            <datalist id="professions">
+                <option value="software enginner">Software Engineer</option>
+                <option value="cybersecurity specialist">Cybersecurity Specialist</option>
+                <option value="professor">Professor</option>
+                <option value="administrative">Administrative</option>
+                <option value="data engineer">Data Engineer</option>
+            </datalist>
+        </label>
+        <label>
+            Country:
+            <select name="country" required>
+                <option selected value="">-</option>
+                <option value="portugal">Portugal</option>
+                <option value="spain">Spain</option>
+                <option value="usa">United States of America</option>
+                <option value="uk">United Kingdown</option>
+            </select>
+        </label>
+        <label>
+            Interests:
+            <select name="interests">
+                <option value="">-</option>
+                <optgroup label="sports">
+                    <option value="swimming">Swimming</option>
+                    <option value="body building">Body Building</option>
+                    <option value="socker">Football (socker)</option>
+                    <option value="basketball">Basketball</option>
+                </optgroup>
+                <optgroup label="tech">
+                    <option value="artifical intelligence">Artificial Intelligence</option>
+                    <option value="machine learning">Machine Learning</option>
+                    <option value="data analysis">Data Analysis</option>
+                    <option value="software enginnering"> Software Engineering</option>
+                </optgroup>
+            </select>
+        </label>
+        <label>
+            How did you find out about the site?
+            <textarea name="comments" rows="5" cols="60"></textarea>
+        </label>
         <button formmethod="post" type="submit">
             Submit
         </button>
