@@ -1,34 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Imperial+Script&family=Playfair+Display&family=Roboto+Slab&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Imperial+Script&family=Ruda&display=swap');
 
-main {
-    width: 65%;
-    margin: auto;
+html {
+    font-family: 'Crimson Pro', serif;
+    font-size: 2rem;
+    color: #333;
+}
+
+body > header, article.recipe {
+    width: 30em;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 body > header {
-    font-family: 'Imperial Script', cursive;
-    font-size: 2em;
-    background-color: #fff;
-    color: #000;
+    font-family: 'Imperial Script', serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    height: 100px;
 }
 
-article {
-    background-color: rgb(245,237,227);
+body > header > h1 {
+    font-size: 6em;
+    font-weight: 400;
+    margin: 0;
+}
+
+article.recipe {
+    background-color: #f7ede2;
     padding: 1em;
 }
 
-h2 {
-    font-family: 'Playfair Display', serif;
+article.recipe h2 {
+    font-family: Ruda;
+    font-weight: 400;
+    border-bottom: 2px solid #333;
     text-align: right;
 }
 
+article.recipe header dl {
+    border: 2px dashed #f28482;
+    border-right: 10px solid #f28482;
+    border-radius: 20px 0 0 20px;
+    background-color: #f5cac3;
+    padding: 0 1em;
+}
+
+article.recipe header dt {
+    text-transform: capitalize;
+    font-variant-caps: small-caps;
+    margin-top: 0.5em;
+}
+
+article.recipe header dd {
+    margin-left: 0;
+    margin-bottom: 0.5em;
+}
+
 p {
-    font-family: 'Crimson Pro', serif;
-    font-size: 1em;
-    text-align: left;
-    spacing: 2em;
+    line-height: 1.4em;
+}
+
+em {
+    background-color: transparent;
+    font-weight: bold;
+    color: #84a59d;
+}
+
+section.description img {
+    width:100%;
+}
+  
+section.ingredients p {
+    font-weight: bold;
+}
+  
+section.method li, section.ingredients li {
+    margin-bottom: 1em;
 }
