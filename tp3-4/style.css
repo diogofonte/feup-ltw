@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
+
+body { font-family: Poppins, sans-serif; }
+
+p { font-family: Lora, serif; }
+
+body > header {
+    background-color: #046DD5;
+    color: #FFF;
+    padding: 1em;
+    padding-top: 1px;
+    font-family: Poppins, sans-serif;
+}
+
+body > header > h1 {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+}
+
+body > header > h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#hamburger { display: none; }
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#signup {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#signup a:first-child {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid;
+}
+
+#related {
+    background-color: #2A2F33;
+    color: #FFF;
+    padding: 1em;
+}
+
+#news > article > header {
+    display: grid;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    z-index: 1;
+    color: white;
+    width: 10em;
+    margin-left: 1em;
+    text-shadow: 3px 3px #333;
+}
+
+#news > article > img {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+li {
+    padding: 1em;
+    text-align: center;
+}
+
+#local { border-top: 5px solid #E1493E; }
+
+#world { border-top: 5px solid #8ABA56; }
+
+#politics { border-top: 5px solid #5B4282; }
+
+#sports { border-top: 5px solid #FF8932; }
+
+#science { border-top: 5px solid #19B6E9; }
+
+#weather { border-top: 5px solid #E84C8B; }
+
+menu a { color: #000; }
+
+#sections > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+#sections > li > a:hover {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2A2F33;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
