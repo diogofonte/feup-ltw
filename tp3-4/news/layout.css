@@ -1,0 +1,37 @@
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul > li {
+    flex: auto;
+}
+
+body {
+    width: 60em;
+    margin: auto;
+    display: grid;
+
+    grid-template-columns: [start] 4fr [middle] 1fr [end];
+    grid-template-rows: [header] auto [nav] auto [content] 1fr [footer] auto [end]; 
+}
+
+#news > article {
+    margin-top: 1em;
+    background-color: white;
+}
+
+#news > article > p {
+    padding: 1em;
+    padding-top: 0;
+}
+
+body > header {
+    grid-column: start / end;
+}
+
+aside {
+    grid-column: middle / end;
+    grid-row: nav / end;
+}

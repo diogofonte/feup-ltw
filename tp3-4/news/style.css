@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:400,700');
 
-body { font-family: Poppins, sans-serif; }
+body { 
+    font-family: Poppins, sans-serif;
+    background-color: #EDEFF0;
+}
 
 p { font-family: Lora, serif; }
 
@@ -48,38 +51,32 @@ a {
     padding: 1em;
 }
 
-#news > article > header {
-    display: grid;
-    grid-row-start: 1;
-    grid-column-start: 1;
-    z-index: 1;
+article > header {
+    position: absolute;
     color: white;
     width: 10em;
     margin-left: 1em;
     text-shadow: 3px 3px #333;
 }
 
-#news > article > img {
-    grid-row-start: 1;
-    grid-column-start: 1;
-}
+img { width: 100% }
 
 li {
     padding: 1em;
     text-align: center;
 }
 
-#local { border-top: 5px solid #E1493E; }
+li:nth-child(1) { border-top: 5px solid #E1493E; }
 
-#world { border-top: 5px solid #8ABA56; }
+li:nth-child(2) { border-top: 5px solid #8ABA56; }
 
-#politics { border-top: 5px solid #5B4282; }
+li:nth-child(3) { border-top: 5px solid #5B4282; }
 
-#sports { border-top: 5px solid #FF8932; }
+li:nth-child(4) { border-top: 5px solid #FF8932; }
 
-#science { border-top: 5px solid #19B6E9; }
+li:nth-child(5) { border-top: 5px solid #19B6E9; }
 
-#weather { border-top: 5px solid #E84C8B; }
+li:nth-child(6) { border-top: 5px solid #E84C8B; }
 
 menu a { color: #000; }
 
